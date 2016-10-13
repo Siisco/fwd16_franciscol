@@ -1,0 +1,114 @@
+
+body {
+
+  background: #ffffcc; background-image: url("img/clouds.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+
+}
+#container {
+  width: 960px;
+margin: 0 auto;
+
+}
+#menu{
+  margin-top: -10px;
+ margin-bottom: 0px;
+  height: 150px;
+  padding: 1px;
+  background-image: url("img/viggen.png");
+  background-repeat: no-repeat;
+  background-position: left 250px top;
+  background-attachment: fixed;
+}
+#menu ul{
+  list-style-type:none;
+
+  text-align: center;
+
+
+}
+#menu ul li{
+  display: inline;
+
+}
+#menu ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+  background-color: #ff8000;
+  border-radius: 5px;
+  border-width: thick;
+  padding: 5px;
+  border-spacing: 0px;
+
+
+
+
+
+}
+h2,h3{
+  color: #ff8000;
+}
+
+
+#sidebar{
+  float: left;
+  width: 150px;
+  height: 1131px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+
+
+}
+#content {
+  float: right;
+  width: 781px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style: solid;
+  border-width: 1px;
+
+
+
+}
+
+#special {
+  margin-left: 240px;
+  margin-top: inherit;
+  margin-bottom: inherit;
+  width: 300px;
+  padding: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-shadow: -1px -3px #A52A2A;
+  color: orange;
+  background-color: red;
+  border-style: solid;
+  border-color: red;
+  border-radius: 15px 5px;
+}
+#box {
+text-align: center;
+margin-left: 100px;
+margin-right: 100px;
+border-top-style: solid;
+border-bottom-style: solid;
+background-color: #FFE4C4;
+border-top-color: yellow;
+border-bottom-color: yellow;
+}
+#footer {
+  clear: both;
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+}
