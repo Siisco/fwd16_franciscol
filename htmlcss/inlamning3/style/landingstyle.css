@@ -1,0 +1,34 @@
+body {
+  background: #ffffcc; background-image: url("../img/scotland.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+
+
+}
+
+.container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+}
+
+#box {
+width: auto;
+
+
+}
+
+a {
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+  color: white;
+}
