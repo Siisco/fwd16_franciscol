@@ -1,0 +1,170 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+background: #ffffcc; background-image: url("../img/scotland.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+height: 100%;
+
+}
+
+
+
+.navmenu ul {
+margin: 0;
+padding: 0;
+display:flex;
+flex-direction: column;
+list-style-type:none;
+background: rgba(0, 0, 0, 0.2);
+
+}
+
+.navmenu ul li{
+  padding: 0.5em;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navmenu ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.social {
+  display:flex;
+  width: 100%;
+  text-align: center;
+
+
+}
+.social i {
+  flex: 1;
+  padding: 2em;
+}
+
+.container {
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+.box {
+  display: flex;
+  background-color: seagreen;
+  flex-direction: column;
+  padding: 8px;
+  width: 48%;
+  opacity: 0.5;
+  border: 1px solid white;
+  margin-top: 20px;
+  color: white;
+  margin-left: 30%;
+}
+
+.underrubrik {
+  display: flex;
+
+
+}
+.kategori1 {
+  flex: 1;
+}
+
+.kategori2 {
+  flex: 1;
+  text-align: right;
+}
+
+.cont {
+  display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100%;
+}
+.knapp {
+  width: 100%;
+    height: 50px;
+    background-color: gold;
+    border: none;
+
+}
+.knapp a {
+  text-decoration: none;
+  color: seagreen;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+@media all and (min-width: 500px) {
+    .navmenu ul {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .navmenu ul li {
+        flex: 1 35%;
+    }
+
+
+
+}
+
+@media all and (min-width: 1000px) {
+.navmenu ul {
+  flex-direction: row;
+}
+
+    .navmenu ul li {
+        flex: 3;
+      }
+      .social {
+        width: auto;
+      }
+    }
+
+  @media all and (min-width: 600px) {
+     .box {
+       width: 40%;
+       margin-left: 10%;
+
+
+
+        }
+        .container {
+
+          max-width: 90%;
+          display:flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          
+
+
+
+
+
+
+        }
+.box:nth-last-child(1){
+  width: 98%;
+
+
+
+}
+
+
+  }
