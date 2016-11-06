@@ -1,0 +1,20 @@
+// Modern border-box applied everywhere.
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+background-color: #405275;
+background-image: url("../images/owback.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+height: 100%;
+
+}
