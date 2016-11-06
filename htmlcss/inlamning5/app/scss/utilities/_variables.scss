@@ -14,3 +14,9 @@ $breakpoints: (
     }
   }
 }
+
+@mixin each($num) {
+  &:nth-child(#{$num}n) {
+    @content
+  }
+}

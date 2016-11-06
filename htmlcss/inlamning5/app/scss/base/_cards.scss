@@ -1,11 +1,11 @@
 .flex-card{
 width: 350px;
-border: 10px solid black;
-
+border: 5px solid black;
 min-height: 250px;
 padding-: 10px;
 margin: 10px;
 font-size: 0.9em;
+
 
 h1, p {
   font-weight: lighter;
@@ -17,6 +17,8 @@ h1, {
 }
 p {
   margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 
@@ -28,6 +30,13 @@ p {
 
 
 
+}
+
+.flex-card {
+  @include each(5)
+  {
+    width: 700px;
+  }
 }
 
 #content {
