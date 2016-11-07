@@ -6,6 +6,8 @@
 // site-wide constant, resets, typography
 @import 'base/base_index';
 
+@import 'layout/layout_index';
+
 /*
 // LAYOUT:
 // Constant on all sites, or site specifics.
@@ -20,4 +22,3 @@
 .testing {
   width: percentage(5/7);
 }
-
