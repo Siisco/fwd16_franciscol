@@ -1,12 +1,5 @@
 .flex-card{
-width: 100%;
-border: 5px solid black;
-min-height: 250px;
-padding-: 10px;
-margin: 10px;
-font-size: 0.9em;
-background-color: black;
-opacity: 0.9;
+@extend %card;
 
 
 h1, p {
@@ -49,7 +42,7 @@ flex-flow: row wrap;
 
 
 .flex-card{
-  width: 350px;
+@extend %card; width: 350px;
 
 @include each(5)
 {
