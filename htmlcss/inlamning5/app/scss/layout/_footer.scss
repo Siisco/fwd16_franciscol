@@ -7,6 +7,10 @@ border: 5px solid black;
 color: white;
 display: flex;
 flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+
+
 
 @include respond-to('medium') {
   display: flex;
@@ -17,7 +21,7 @@ align-items: center;
 
 }
 
-
 .column {
 flex: 1;
+
 }

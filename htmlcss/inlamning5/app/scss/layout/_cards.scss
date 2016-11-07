@@ -42,7 +42,7 @@ flex-flow: row wrap;
 
 
 .flex-card{
-@extend %card; width: 350px;
+width: 350px;
 
 @include each(5)
 {
