@@ -4,7 +4,11 @@ nav, a, ul, li {
   text-decoration: none;
   list-style-type: none;
 }
-
+#nav {
+		width:100%;
+		font-size: 1.00em;
+		background: #FCBD49;
+	}
 
 #nav label {
   position: relative;
@@ -36,7 +40,8 @@ nav, a, ul, li {
   display: block !important;
 }
 
-#nav ul {
+#nav>ul {
+
   display: none;
   width: 100%;
   position: relative;
@@ -50,64 +55,117 @@ nav, a, ul, li {
   background: #FCBD49;
   color: black;
   opacity: 0.9;
-  border-right: 1px solid #0a6b44;
+
 
 }
 
-#nav ul li .sub1 li a {
-  padding-left: 2.5em;
+#nav ul.megamenu ul li a {
+  color: red;
+  padding-left: 3em;
 }
 
-#nav ul li .sub1 li .sub2 li a {
-  padding-left: 4.125em;
+#nav ul.megamenu ul {
+  padding: 0;
+  margin: 0;
+
+  background: #FCBD49;
 }
+
+
 
 @include respond-to('medium') {
   #nav label {
     display: none;
   }
-  #nav ul {
+
+#nav ul li {
+
+  flex: 1;
+}
+  #nav > ul {
+
       display: flex;
       flex-flow: row wrap;
+      justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 0;
     }
 
-    #nav ul li {
-    position: relative;
-    text-align: center;
-    flex: 1;
-  }
-  #nav ul li .sub1 {
-      display: none !important;
-      position: absolute;
-      top: 3.0625em;
-      left: 0;
-  	width: 12.5em;
-      z-index: 200;
-    }
-    #nav ul li:hover > .sub1 {
-    display: block !important;
-  }
-  #nav ul li .sub1 li {
-      text-align: left;
-    }
-    #nav ul li .sub1 li .sub2 {
-        z-index: 300;
-        top: 0px;
-        left: 12.4em;
+    #nav ul.megamenu {
+position: absolute;
+display: flex;
+flex-flow: row wrap;
+width: 100%;
+opacity: 0.9;
+top: -9999px;
+left: 0;
+padding: 40px 40px 0 40px;
+background: #FCBD49;
+text-align: left;
+border-top: 5px solid black;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+z-index: 1;
       }
 
-      #nav ul li .sub1 li .sub2 li a {
-    padding-left: 30px !important;
-  }
+      #nav ul li:hover ul.megamenu {
+  top: 100%;
+}
+#nav ul.megamenu ul {
+  flex: 1 1 25%;
+  margin-bottom: 40px;
+  color: #000;
+  box-shadow: none;
+}
 
-  #nav ul li > .sub2{
-	  display:none;
-	  position: absolute;
-	  }
-    #nav ul li:hover > .sub2 {
-        display: block !important;
-      }
+#nav ul li {
 
+  color: blue;
+  transition: 0.5s;
+}
+#nav > ul > li:hover {
+  background: black;
+  opacity: 1;
+}
+#nav ul.megamenu ul li a:hover {
+background: black;
+opacity: 3;
+
+}
+#nav ul.megamenu ul li {
+  display: block;
+
+}
+
+#nav a {
+  display: block;
+  color: white;
+}
+#nav > ul > li > a {
+  padding: 15px 25px;
+}
+#nav ul > li.submenu > a:after {
+  position: relative;
+  float: right;
+  content: '';
+  margin-left: 10px;
+  margin-top: 8px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid red;
+  border-bottom: 5px solid transparent;
+
+}
+#nav ul > li.submenu:hover > a:after {
+  margin-top: 2px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid red;
+}
+#nav ul.megamenu ul li a {
+  margin-top: 0.625em;
+  transition: 0.5s;
+  padding-left: 0;
+}
 
 
 }
