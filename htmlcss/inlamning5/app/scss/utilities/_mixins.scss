@@ -1,3 +1,5 @@
+///Mixin using breakpoint map
+
 @mixin respond-to($breakpoint) {
   // If the key exists in the map
   @if map-has-key($breakpoints, $breakpoint) {
@@ -8,6 +10,9 @@
   }
 }
 
+
+
+/// Flexcard Mixin
 @mixin each($num) {
   &:nth-child(#{$num}n) {
     @content
