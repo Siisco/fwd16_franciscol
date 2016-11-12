@@ -1,0 +1,27 @@
+.footer {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: black;
+  opacity: 0.9;
+border: 5px solid black;
+color: white;
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+
+
+
+@include respond-to('medium') {
+  display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+}
+
+}
+
+.column {
+flex: 1;
+
+}
