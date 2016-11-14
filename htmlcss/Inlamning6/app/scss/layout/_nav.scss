@@ -7,7 +7,7 @@ nav, a, ul, li {
 #nav {
 		width:100%;
 		font-size: 1.00em;
-		background: #FCBD49;
+		background: map-get($color, 'main');
 	}
 
 #nav label {
@@ -17,7 +17,7 @@ nav, a, ul, li {
   padding: .45em;
   font-size: 1.1em;
   margin: 0;
-  background: #FCBD49;
+  background: map-get($color, 'main');
   line-height: 2em;
   color: black;
 }
@@ -52,7 +52,7 @@ nav, a, ul, li {
   padding: 1em;
   font-style: oblique;
   font-weight: bolder;
-  background: #FCBD49;
+  background: map-get($color, 'main');
   color: black;
   opacity: 0.9;
 
@@ -68,7 +68,7 @@ nav, a, ul, li {
   padding: 0;
   margin: 0;
 
-  background: #FCBD49;
+  background: map-get($color, 'main');
 }
 
 
@@ -86,7 +86,7 @@ nav, a, ul, li {
 
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: center;
 
   margin: 0 auto;
   padding: 0;
@@ -101,7 +101,7 @@ opacity: 0.9;
 top: -9999px;
 left: 0;
 padding: 40px 40px 0 40px;
-background: #FCBD49;
+background: map-get($color, 'main');
 text-align: left;
 border-top: 5px solid black;
 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
