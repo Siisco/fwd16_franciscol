@@ -1,0 +1,22 @@
+/// Mixin using breakpoint map
+/// @param $breakpoint - Insert value from $breakpoints map.
+
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+}
+
+
+
+/// Flexcard Mixin
+/// @param $num  - Each $num affected by :nth-child selector.
+@mixin each($num) {
+  &:nth-child(#{$num}n) {
+    @content
+  }
+}

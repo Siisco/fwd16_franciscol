@@ -1,0 +1,14 @@
+
+/// Helper for the base of my card
+
+%card{
+  width: 100%;
+  border: 5px solid black;
+  min-height: 250px;
+  padding-: 10px;
+  margin: 10px;
+  font-size: 0.9em;
+  background-color: map-get($color, 'flexcard');
+  opacity: 0.9;
+
+}

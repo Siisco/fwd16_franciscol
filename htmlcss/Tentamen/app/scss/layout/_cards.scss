@@ -1,0 +1,55 @@
+.flex-card{
+@extend %card;
+
+
+h1, p {
+  font-weight: lighter;
+  color: white;
+
+}
+h1, {
+  text-align: center;
+}
+p {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.top {
+  border-bottom: 5px solid #FCBD49; 
+}
+
+.resize {
+  width: 100px;
+  height: auto;
+
+}
+
+
+
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+#content {
+@include respond-to('medium') {
+justify-content: center;
+display: flex;
+flex-flow: row wrap;
+
+
+.flex-card{
+width: 350px;
+
+@include each(5)
+{
+  width: 700px;
+}
+}
+}
+}

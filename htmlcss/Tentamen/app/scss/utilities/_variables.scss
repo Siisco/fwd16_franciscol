@@ -1,0 +1,22 @@
+/// Breakpoints for display
+
+$breakpoints: (
+  'small':  ( min-width:  30.000em ),
+  'medium': ( min-width:  48.000em ),
+  'large':  ( min-width: 62.000em ),
+  'wide':  ( min-width: 75.000em )
+) !default;
+
+
+/// COLORS map
+$color: (
+  main: #FCBD49,
+  flexcard: #fb4f4f,
+  footer: #fb4f4f,
+  accent3: #1d8aaf,
+  accent4: #0a3a4a,
+  dark: #282828,
+  gray: #e1e1e1,
+  darkgrey: #666,
+  bright: #f5f5f5
+) !default;
