@@ -1,0 +1,45 @@
+.landingcontainer {
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+}
+
+#box {
+  text-align: center;
+  background-color: #916c55;
+  opacity: 0.7;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+a {
+
+
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+  color: red;
+  font-weight: bolder;
+}
+
+
+}
+
+#smallbox {
+  background-color: white;
+  opacity: 0.8;
+  margin-top: 50px;
+  width: 90%;
+  height: 70%;
+  margin-left: 10px;
+  padding-top: 10px;
+
+
+}

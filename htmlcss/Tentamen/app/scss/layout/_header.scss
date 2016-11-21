@@ -1,0 +1,38 @@
+
+
+.header {
+  width: 100%;
+background: map-get($color, 'brownie');
+background-image: url("../images/binding-dark.png");
+display: flex;
+flex-flow: row wrap;
+align-items: baseline;
+justify-content: center;
+flex: 1;
+
+.socicons {
+border-right-style: solid;
+padding-right: 10px;
+color: rgba(0, 0, 0, 0.6);
+text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67);
+
+}
+
+
+.kill {
+margin-left: 5px;
+  display: flex;
+  align-items: baseline;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67);
+
+
+}
+
+.headresize {
+width: 100px;
+height: auto;
+
+}
+
+}

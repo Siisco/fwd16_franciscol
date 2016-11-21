@@ -20,3 +20,16 @@
     @content
   }
 }
+
+/// Mixin for putting border on x and y elements.
+
+@mixin transition {
+  @for $i from 6 through 7 {
+    &:nth-child(#{$i}) {
+  border-radius: 10px;
+  border: 2px solid #ec4970;
+@content
+
+    }
+  }
+}

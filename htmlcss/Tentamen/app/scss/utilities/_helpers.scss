@@ -1,14 +1,38 @@
 
-/// Helper for the base of my card
+/// Helper for the first type of card
 
 %card{
-  width: 100%;
-  border: 5px solid black;
-  min-height: 250px;
-  padding-: 10px;
-  margin: 10px;
-  font-size: 0.9em;
-  background-color: map-get($color, 'flexcard');
-  opacity: 0.9;
+  width: 350px;
+  height: 350px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+
+
+}
+
+
+/// Helper for the second type of card
+
+%card2 {
+  width: 350px;
+  margin-left: 40px;
+  .rubrik {
+  color: red;
+  }
+  .rubrik:before {
+    content: "- Kill this poacher - Reward $ "
+  }
+.smallbox {
+background: map-get($color, 'darkorangey');
+opacity: 0.8;
+width: 300px;
+p {
+  color: white;
+}
+
+}
 
 }

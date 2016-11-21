@@ -1,52 +1,67 @@
-.flex-card{
+.flex-card1{
 @extend %card;
+display: flex;
+align-items: center;
+flex-flow: column;
+
 
 
 h1, p {
   font-weight: lighter;
-  color: white;
+  color: red;
+
 
 }
 h1, {
   text-align: center;
 }
-p {
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.top {
-  border-bottom: 5px solid #FCBD49; 
-}
 
 .resize {
-  width: 100px;
-  height: auto;
+width: 330px;
+height: auto;
 
+
+}
+
+
+}
+
+.flex-card2 {
+@extend %card2;
+@include transition;
+padding-left: 30px;
+h1 {
+color: red;
+}
 }
 
 
 
-}
+
+
+
+
 
 #content {
+
+  justify-content: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 
 
 #content {
 @include respond-to('medium') {
-justify-content: center;
+align-items: center;
 display: flex;
 flex-flow: row wrap;
 
 
-.flex-card{
-width: 350px;
+.flex-card2{
 
-@include each(5)
+
+@include each(2)
 {
   width: 700px;
 }
