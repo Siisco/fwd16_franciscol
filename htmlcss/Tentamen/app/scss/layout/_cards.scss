@@ -63,6 +63,7 @@ flex-flow: row wrap;
 
 @include each(2)
 {
+  
   width: 700px;
 }
 }

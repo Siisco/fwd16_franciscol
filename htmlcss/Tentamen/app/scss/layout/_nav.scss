@@ -81,14 +81,17 @@ nav, a, ul, li {
   #nav label {
     display: none;
 
+
   }
+
 
 #nav ul li {
 background-image: url("../images/binding-dark.png");
+
   flex: 1;
 }
   #nav > ul {
-  background-image: url("../images/binding-dark.png");
+
   background: map-get($color, 'brownie');
       display: flex;
       flex-flow: row wrap;
@@ -101,6 +104,7 @@ background-image: url("../images/binding-dark.png");
     }
 
     #nav ul.megamenu {
+
 position: absolute;
 display: flex;
 flex-flow: row wrap;
