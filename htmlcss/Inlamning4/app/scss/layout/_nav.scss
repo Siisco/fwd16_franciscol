@@ -99,9 +99,9 @@ nav, a, ul, li {
       display: none !important;
       position: absolute;
       top: 3.0625em;
-      left: 0;
+      left: 9em;
   	width: 12.5em;
-      z-index: 200;
+      z-index: 100;
     }
     #nav ul li:hover > .sub1 {
     display: block !important;
