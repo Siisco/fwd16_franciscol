@@ -1,0 +1,18 @@
+Egenskap: Registrera sig och placera order
+För att kunna hyra bil via HyrdinbilAB
+
+Scenario: Ny användare.
+- Registrera sig med ett användarnamn
+- Välja ett lösenord
+- Fylla i nödvändiga uppgifter som systemet krävs för att hyra bil.
+- Välja bland tillgängliga bilar.
+- Hyra bil.
+
+Scenario: Registrerad användare.
+- Logga in
+- Välja bland tillgängliga bilar
+- Hyra bil.
+
+
+
+
