@@ -1,0 +1,4 @@
+4) SELECT * FROM `crew` inner join rankandsalary where (salary > 500);
+
+- Blev fel, vet inte varför.
+
