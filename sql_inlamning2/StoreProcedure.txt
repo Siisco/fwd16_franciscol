@@ -1,0 +1,7 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `countRabies`()
+    NO SQL
+BEGIN
+
+SELECT count(*) FROM `diagnos` where Name = 'Rabies';
+
+END
